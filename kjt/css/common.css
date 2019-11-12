@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+}
+a {
+    color: #999;
+}
+.container {
+    margin: 0 auto;
+    width: 1200px;
+}
+.c{
+    margin: 0 auto;
+    width: 1000px;
+}
+/* 头部 首栏 */
+
+.head {
+    height: 30px;
+    background: #F5F5F5;
+}
+.head .head1 {
+    display: flex;
+}
+.head-l li:nth-of-type(5) a {
+    background-color: lightgray;
+    border-radius: 5px;
+    color: white;
+    padding: 0 5px;
+}
+.head .head1 ul {
+    display: flex;
+    line-height: 30px;
+}
+.head .head1 ul li {
+    line-height: 30px;
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+}
+.head .head1 .head-l li{
+    padding-right: 10px;
+}
+.head-l {
+       padding-right: 150px;
+}
+.head-r li a{
+    border-right:1px solid #dcdcdc ;
+    padding:0 10px;
+}
+.head-r li .login{
+   border: none;
+}
+
+.head-l li>a:hover,.head-r li>a:hover{
+     color: #ff5252;
+}
+.ma{
+    height: 30px;
+}
+marquee {
+width: 300px;
+    line-height:30px;
+}
+.head-r{
+    padding-left: 40px;
+    position: relative;
+}
+
+
+
+.head-r dd{
+    display: none;
+}
+.head-r dl{
+  position: absolute;
+  z-index: 999;
+  
+}
+.head-r dd a{
+    border: none;
+}
+.head-r li dl:hover dd{
+    display: block;
+    background:white;
+    
+
+}
+
+.head-r li dl:hover dt{
+   
+    background:white;
+    color: #ff5252;
+    
+}
+.head-r li dl:hover dt a{
+   
+ 
+    color: #ff5252;
+    
+}
+
+
+.head-r dl:hover dd:hover{
+    background: #e5e5e5;
+
+}
+
+.head-r dl{
+    position: relative;
+    
+}
+.head-r li .sj {border:none;}
+
+/* 头部二 */
+
+.head-second{
+   min-width:  100px;
+   line-height: 100px;
+   border-bottom: 2px solid #ff5252;
+   padding-bottom:8px;
+
+}
+.head-second div div{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+}
+.head-second div div:last-child{
+    color: #848484;
+    font-size: 16px;
+   
+}
+.head-second div div:last-child i{
+    color: #848484;
+    font-size: 25px;
+    padding-right: 10px;
+   
+}
+
+
+/* 尾部copyright */
+.copyright{
+    text-align: center;
+    border-top: 1px solid #cdcdcd;
+    padding-top: 40px;
+    margin-top: 30px;
+    
+}
+.copyright ul{
+   display: flex;
+   justify-content: center;
+   margin: 10px 0;
+}
+.copyright ul li a{
+   font-size: 14px;
+   padding:0 15px;
+}
+.copyright ul span{
+   color: lightgrey; 
+}
+.copyright p span{
+   font-size: 12px;
+   color:#999999; 
+   margin-right: 3px;
+}
+  .footerIcon{
+       text-align: center;
+       height: 80px;
+        padding: 15px 0;
+   }
+     .footerIcon img{
+      width: 126px;
+      height:45px;
+      margin-right: 20px;
+   }
