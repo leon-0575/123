@@ -4,7 +4,9 @@
     
   
 }
-
+.error{
+    color: red;
+}
 
 .main {
     width: 100%;

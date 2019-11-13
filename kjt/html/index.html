@@ -10,9 +10,12 @@
 <link rel="stylesheet" href="../css/index.css">
 <link rel="stylesheet" href="../libs/normalize.css">
 <link rel="stylesheet" href="../libs/font-awesome-4.7.0/css/font-awesome.css">
+<script src="../libs/jquery-2.2.4.js"></script>
+<script src="../js/index.js"></script>
+
 
 <body>
-    <div class="head">
+    <div class="head ">
         <div class="container">
             <div class="head1">
                 <ul class="head-l">
@@ -25,8 +28,8 @@
                     <li><a href="">More...</a></li>
                 </ul>
                 <ul class="head-r">
-                    <li><a href="" class="login">请登录</a>-
-                        <a href="" class="register">免费注册</a>
+                    <li><a href="login.html" class="login">请登录</a>-
+                        <a href="register.html" class="register">免费注册</a>
                     </li>
                     <li><a href="">我的订单</a></li>
                     <li>
@@ -105,8 +108,9 @@
                     </div>
                 </div>
                 <div class="cart">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                    <span>我的购物车</span>
+                    <a href="../html/cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span>我的购物车</span></a>
+
                     <div id="cart-number">0</div>
                 </div>
             </div>
@@ -127,12 +131,17 @@
         </div>
     </div>
     <div class="banner">
-        <ul>
-            <li><img src="../img/banner.jpg" alt=""></li>
-            <div class="btn-l">
-                <</div> <div class="btn-r">>
+        <div class="imgbox">
+            <img src="../img/banner.jpg" alt="">
+            <img src="../img/banner2.jpg" alt="">
+            <img src="../img/banner3.jpg" alt="">
+            <img src="../img/banner4.jpg" alt="">
+            <img src="../img/banner5.jpg" alt="">
+
+            <div id="btn-l">
+                <</div> <div id="btn-r">>
             </div>
-        </ul>
+        </div>
         <div class="container">
             <div class="box1">
                 <div class="list">
@@ -191,119 +200,133 @@
     </div>
     <div class="main" id="main">
         <div class="container">
-            <div class="main-country">
-                <div class="title">国家馆</div>
-                <div class="items">
-                    <div class=" item">
-                        <a href="##">日本馆</a>
+            <div class="floorbox">
+                <div class="main-country floor">
+                    <div class="title">国家馆</div>
+                    <div class="items">
+                        <div class=" item">
+                            <a href="##">日本馆</a>
+                        </div>
+                        <div class="item">
+                            <a href="##">韩国馆</a>
+                        </div>
+                        <div class="item">
+                            <a href="##">北美馆</a>
+                        </div>
+                        <div class="item">
+                            <a href="##">欧洲馆</a>
+                        </div>
+                        <div class="item">
+                            <a href="##">澳洲馆</a>
+                        </div>
                     </div>
-                    <div class="item">
-                        <a href="##">韩国馆</a>
-                    </div>
-                    <div class="item">
-                        <a href="##">北美馆</a>
-                    </div>
-                    <div class="item">
-                        <a href="##">欧洲馆</a>
-                    </div>
-                    <div class="item">
-                        <a href="##">澳洲馆</a>
+                    <div class="goods">
+                        <ul>
+                            <li>
+                                <div><a href=""><img src="../img/jpan_1.jpg" alt=""></a></div>
+                                <div class="txt"><a href="">花王乐而雅S系列卫生巾 夜用护翼棉柔透气40cm无荧光剂超薄型11片装(夜用)</a></div>
+                                <div>
+                                    <span class="price-now">￥29.00</span>
+                                    <em class="price-old">￥58.00</em>
+                                </div>
+                            </li>
+                            <li>
+                                <div><a href=""><img src="../img/jpan_2.jpg" alt=""></a></div>
+                                <div class="txt"><a href="">花王Prettia泡沫染发剂 黑发专用 白金浅驼色</a></div>
+                                <div>
+                                    <span class="price-now">￥55.00</span>
+                                    <em class="price-old">￥78.00</em>
+                                </div>
+                            </li>
+                            <li>
+                                <div><a href=""><img src="../img/jpan_3.jpg" alt=""></a></div>
+                                <div class="txt"><a href="">日本ROHTO乐敦CC 化妆水 170ml</a></div>
+                                <div>
+                                    <span class="price-now">￥69.00</span>
+                                    <em class="price-old">￥128.00</em>
+                                </div>
+                            </li>
+                            <li>
+                                <div><a href=""><img src="../img/jpan_4.jpg" alt=""></a></div>
+                                <div class="txt"><a href="">嘉娜宝Kanebo SUISAI 酵素洁面粉 0.4g/个 32个装</a></div>
+                                <div>
+                                    <span class="price-now">￥111.00</span>
+                                    <em class="price-old">￥158.00</em>
+                                </div>
+                            </li>
+                            <li>
+                                <div><a href=""><img src="../img/jpan_5.jpg" alt=""></a></div>
+                                <div class="txt"><a href="">Spa Treatment眼膜红色新版 60片(无香味_无色)</a></div>
+                                <div>
+                                    <span class="price-now">￥249.00</span>
+                                    <em class="price-old">￥520.00</em>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="goods">
-                    <ul>
-                        <li>
-                            <div><a href=""><img src="../img/jpan_1.jpg" alt=""></a></div>
-                            <div class="txt"><a href="">花王乐而雅S系列卫生巾 夜用护翼棉柔透气40cm无荧光剂超薄型11片装(夜用)</a></div>
-                            <div>
-                                <span class="price-now">￥29.00</span>
-                                <em class="price-old">￥58.00</em>
-                            </div>
-                        </li>
-                        <li>
-                            <div><a href=""><img src="../img/jpan_2.jpg" alt=""></a></div>
-                            <div class="txt"><a href="">花王Prettia泡沫染发剂 黑发专用 白金浅驼色</a></div>
-                            <div>
-                                <span class="price-now">￥55.00</span>
-                                <em class="price-old">￥78.00</em>
-                            </div>
-                        </li>
-                        <li>
-                            <div><a href=""><img src="../img/jpan_3.jpg" alt=""></a></div>
-                            <div class="txt"><a href="">日本ROHTO乐敦CC 化妆水 170ml</a></div>
-                            <div>
-                                <span class="price-now">￥69.00</span>
-                                <em class="price-old">￥128.00</em>
-                            </div>
-                        </li>
-                        <li>
-                            <div><a href=""><img src="../img/jpan_4.jpg" alt=""></a></div>
-                            <div class="txt"><a href="">嘉娜宝Kanebo SUISAI 酵素洁面粉 0.4g/个 32个装</a></div>
-                            <div>
-                                <span class="price-now">￥111.00</span>
-                                <em class="price-old">￥158.00</em>
-                            </div>
-                        </li>
-                        <li>
-                            <div><a href=""><img src="../img/jpan_5.jpg" alt=""></a></div>
-                            <div class="txt"><a href="">Spa Treatment眼膜红色新版 60片(无香味_无色)</a></div>
-                            <div>
-                                <span class="price-now">￥249.00</span>
-                                <em class="price-old">￥520.00</em>
-                            </div>
-                        </li>
-                    </ul>
+                <div class="main-mzgh  floor">
+                    <div class="title">美妆个护</div>
+                    <div class="imglist">
+                        <div><a href=""><img src="../img/mzgh0.jpg" alt=""></a></div>
+                        <div><a href=""><img src="../img/mzgh1.jpg" alt=""></a>
+                            <a href=""><img src="../img/mzgh2.jpg" alt=""></a></div>
+                        <div><a href=""><img src="../img/mzgh3.jpg" alt=""></a>
+                            <a href=""><img src="../img/mzgh4.jpg" alt=""></a></div>
+                        <div><a href=""><img src="../img/mzgh5.jpg" alt=""></a>
+                            <a href=""><img src="../img/mzgh6.jpg" alt=""></a></div>
+                    </div>
+                </div>
+                <div class="main-myyp  floor">
+                    <div class="title">母婴用品</div>
+                    <div class="imglist">
+                        <div><a href=""><img src="../img/myyp0.jpg" alt=""></a></div>
+                        <div><a href=""><img src="../img/myyp1.jpg" alt=""></a>
+                            <a href=""><img src="../img/myyp2.jpg" alt=""></a></div>
+                        <div><a href=""><img src="../img/myyp3.jpg" alt=""></a>
+                            <a href=""><img src="../img/myyp4.jpg" alt=""></a></div>
+                        <div><a href=""><img src="../img/myyp5.jpg" alt=""></a>
+                            <a href=""><img src="../img/myyp6.jpg" alt=""></a></div>
+                    </div>
+                </div>
+                <div class="main-jksp  floor">
+                    <div class="title">进口食品</div>
+                    <div class="imglist">
+                        <div><a href=""><img src="../img/jksp0.jpg" alt=""></a></div>
+                        <div><a href=""><img src="../img/jksp1.jpg" alt=""></a>
+                            <a href=""><img src="../img/jksp2.jpg" alt=""></a></div>
+                        <div><a href=""><img src="../img/jksp3.jpg" alt=""></a>
+                            <a href=""><img src="../img/jksp4.jpg" alt=""></a></div>
+                        <div><a href=""><img src="../img/jksp5.jpg" alt=""></a>
+                            <a href=""><img src="../img/jksp6.jpg" alt=""></a></div>
+                    </div>
+                </div>
+
+                <div class="main-plzx floor">
+                    <div class="title">品类中心</div>
+                    <div class="imglist">
+                        <div><a href=""><img src="../img/plzx1.jpg" alt=""></a>
+                            <a href=""><img src="../img/plzx2.jpg" alt=""></a></div>
+                        <div><a href=""><img src="../img/plzx3.jpg" alt=""></a>
+                            <a href=""><img src="../img/plzx4.jpg" alt=""></a></div>
+                        <div><a href=""><img src="../img/plzx5.jpg" alt=""></a>
+                            <a href=""><img src="../img/plzx6.jpg" alt=""></a></div>
+                        <div><a href=""><img src="../img/plzx7.jpg" alt=""></a>
+                            <a href=""><img src="../img/plzx8.jpg" alt=""></a></div>
+                    </div>
                 </div>
             </div>
-            <div class="main-mzgh">
-                <div class="title">美妆个护</div>
-                <div class="imglist">
-                    <div><a href=""><img src="../img/mzgh0.jpg" alt=""></a></div>
-                    <div><a href=""><img src="../img/mzgh1.jpg" alt=""></a>
-                        <a href=""><img src="../img/mzgh2.jpg" alt=""></a></div>
-                    <div><a href=""><img src="../img/mzgh3.jpg" alt=""></a>
-                        <a href=""><img src="../img/mzgh4.jpg" alt=""></a></div>
-                    <div><a href=""><img src="../img/mzgh5.jpg" alt=""></a>
-                        <a href=""><img src="../img/mzgh6.jpg" alt=""></a></div>
-                </div>
-            </div>
-            <div class="main-myyp">
-                <div class="title">母婴用品</div>
-                <div class="imglist">
-                    <div><a href=""><img src="../img/myyp0.jpg" alt=""></a></div>
-                    <div><a href=""><img src="../img/myyp1.jpg" alt=""></a>
-                        <a href=""><img src="../img/myyp2.jpg" alt=""></a></div>
-                    <div><a href=""><img src="../img/myyp3.jpg" alt=""></a>
-                        <a href=""><img src="../img/myyp4.jpg" alt=""></a></div>
-                    <div><a href=""><img src="../img/myyp5.jpg" alt=""></a>
-                        <a href=""><img src="../img/myyp6.jpg" alt=""></a></div>
-                </div>
-            </div>
-            <div class="main-jksp">
-                <div class="title">进口食品</div>
-                <div class="imglist">
-                    <div><a href=""><img src="../img/jksp0.jpg" alt=""></a></div>
-                    <div><a href=""><img src="../img/jksp1.jpg" alt=""></a>
-                        <a href=""><img src="../img/jksp2.jpg" alt=""></a></div>
-                    <div><a href=""><img src="../img/jksp3.jpg" alt=""></a>
-                        <a href=""><img src="../img/jksp4.jpg" alt=""></a></div>
-                    <div><a href=""><img src="../img/jksp5.jpg" alt=""></a>
-                        <a href=""><img src="../img/jksp6.jpg" alt=""></a></div>
-                </div>
-            </div>
-            <div class="main-plzx">
-                <div class="title">品类中心</div>
-                <div class="imglist">
-                    <div><a href=""><img src="../img/plzx1.jpg" alt=""></a>
-                        <a href=""><img src="../img/plzx2.jpg" alt=""></a></div>
-                    <div><a href=""><img src="../img/plzx3.jpg" alt=""></a>
-                        <a href=""><img src="../img/plzx4.jpg" alt=""></a></div>
-                    <div><a href=""><img src="../img/plzx5.jpg" alt=""></a>
-                        <a href=""><img src="../img/plzx6.jpg" alt=""></a></div>
-                    <div><a href=""><img src="../img/plzx7.jpg" alt=""></a>
-                        <a href=""><img src="../img/plzx8.jpg" alt=""></a></div>
-                </div>
-            </div>
+            <ul class="rs">
+                <li>国家馆</li>
+                <li>美妆个护</li>
+                <li>母婴用品</li>
+                <li>进口食品</li>
+                <li>品类中心</li>
+                <p>top</p>
+                
+            </ul>
+
+
             <div class="wrapper">
                 <img src="../img/ad.jpg" alt="">
             </div>
@@ -416,7 +439,7 @@
                     <span>丨</span>
                     <li><a href="">联系我们</a></li>
                 </ul>
-               
+
                 <p>
                     <span>Copyright 2019 </span>
                     <span>上海跨境通国际贸易有限公司</span>
@@ -430,6 +453,10 @@
             <a href=""> <img src="../img/footer_2.png" alt=""></a>
         </div>
     </div>
+
+
+
+
 </body>
 
 </html>

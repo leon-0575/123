@@ -18,14 +18,11 @@
   height: 600px;
 }
 
-.main .main-t .left .bimgl img {
+.main .main-t .left .sbox img {
   width: 400px;
   height: 400px;
 }
 
-.main .main-t .left .bimgr {
-  display: none;
-}
 
 .main .main-t .left ul {
   display: flex;
@@ -40,7 +37,7 @@
 .main .main-t .left ul li img {
   width: 80px;
   height: 80px;
-  border: 1pxsolid #e5e5e5;
+  border: 1px solid #e5e5e5;
 }
 
 .main .main-t .middle {
@@ -55,7 +52,7 @@
 
 .main .main-t .middle ul li:nth-child(1) {
   height: 60px;
-  padding: 20px20px;
+  padding: 20px;
 }
 
 .main .main-t .middle ul li:nth-child(1) span {
@@ -148,4 +145,62 @@
   text-align: center;
   margin-left: 70px;
   border-radius: 5px;
+}
+
+.box {
+  display: flex;
+}
+
+.box .sbox {
+  width: 400px;
+  height: 400px;
+
+}
+
+.box .sbox img {
+  width: 400px;
+  height: 400px;
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px solid black;
+
+}
+
+.simg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bbox {
+  margin-left: 50px;
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid black;
+  display: none;
+  z-index: 999;
+}
+
+.bimg {
+  width: 800px;
+  height: 800px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.shadow {
+  background-color: rgba(200, 200, 200, 0.5);
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+  cursor: move;
 }
