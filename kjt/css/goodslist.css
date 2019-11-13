@@ -1,7 +1,3 @@
-.nav ul li:hover a {
-  color: red;
-}
-
 .title span:hover {
   color: red;
   cursor: pointer;
@@ -15,6 +11,23 @@
   align-items: center;
   background: #ffffff;
 }
+.hotBar ul li:hover a{
+  color: red;
+}
+.nav .container ul li:hover a{
+  color: red;
+}
+.nav .container ul li:first-child{
+  height: 40px;
+}
+.nav{
+  height: 40px;
+  border-bottom: #ff2b2b 3px solid;
+}
+.inselect div:hover span{
+  color: red;
+}
+
 
 .goods-search ul li {
   height: 40px;
@@ -57,7 +70,7 @@
   width: 100%;
   height: 40px;
   background: #f5f5f5;
-  margin: 50px 0;
+  margin: 20px 0;
   line-height: 40px;
   display: flex;
   justify-content: space-around;
@@ -74,6 +87,11 @@
   background: white;
 }
 
+.goods-searchbar ul li:hover {
+  background-color: red;
+  color: white;
+}
+
 .goods-searchbar div {
   cursor: pointer;
   background: white;
@@ -84,23 +102,65 @@
   padding: 0 10px;
 }
 
+.goods-searchbar div label:hover {
+  color: red;
+}
+
 .goods-list {
   width: 100%;
   min-height: 420px;
+  margin: 30px 0;
 }
 
 .goods-list ul {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-}
-
-.goods-list ul li {
-  width: 240px;
+  width: 1200px;
   height: 420px;
 }
 
+.goods-list ul li {
+  border: 1px solid #999999;
+  width: 240px;
+  height: 420px;
+  padding: 10px;
+}
+
 .goods-list ul li img {
+  display: block;
   width: 214px;
   height: 214px;
+  padding: 10px 0;
+}
+
+.goods-list ul li div {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.goods-list ul li div span {
+  font-size: 12px;
+}
+
+.goods-list ul li .name {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #666666;
+  height: 40px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: -webkit-box;
+}
+
+.goods-list ul li button {
+  width: 140px;
+  margin: 10px 40px;
+}
+
+.goods-list ul li:first-child a:nth-of-type(2) {
+  color: #ff2b2b;
+  font-size: 18px;
 }
