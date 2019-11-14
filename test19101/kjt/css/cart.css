@@ -1,0 +1,171 @@
+.main .goods ul li {
+    width: 240px;
+    height: 300px;
+    padding: 3px 13px;
+}
+.goods{
+    background: white;
+}
+.main .goods ul  {
+    background: white;
+}
+.main .goods ul li img {
+  width: 194px;
+  height: 194px;
+}
+.main .goods  .txt  {
+  font-size: 14px;
+  height: 42px;
+  width: 180px;
+ margin:10px 0;
+ overflow: hidden;
+}
+.main .goods  .txt  a{
+ overflow: hidden;
+ line-height: 21px;
+}
+.main .goods  span{
+color: #FF5252;
+font-size: 16px;
+}
+.main .goods  em{
+text-decoration: line-through;
+color: #999999;
+margin-left: 10px;
+font-size: 14px;
+}
+.main .goods  div:nth-of-type(2) a {
+  font-size: 14px;
+  height: 42px; 
+ margin:10px 0;
+ overflow: hidden;
+}
+.main .goods ul {
+    display: flex;
+}
+.main div h3{
+    font-size: 20px;
+    padding: 10px 0;
+    font-weight: normal;
+    color: #FF5252;
+}
+.main{
+    background: #f6f6f6;
+    padding-bottom: 50px;
+}
+.main .cart-title h1{
+    height: 60px;
+    width: 100%;
+    color: #FF5252;
+    font-weight: normal;
+    font-size: 24px;
+    margin: 0;
+    padding: 20px 0;
+}
+.cart tr th{
+background: #e03357; 
+height: 40px;
+color: white;
+font-size: 14px;
+}
+.cart tr th{
+width: 100px;
+}
+.cart tr th:nth-of-type(1),.cart tr th:nth-of-type(2){
+width: 250px;
+}
+.cart tr th:nth-of-type(3){
+width: 200px;
+}
+.cart tr td{
+height: 100px;
+text-align: center;
+width: 100px;
+}
+.cart tr td:nth-of-type(1){
+width: 500px;
+text-align: left;
+}
+.cart tr th:nth-of-type(1){
+    /* line-height: 40px; */
+text-align: left;
+}
+.cart tr td:nth-of-type(2){
+width: 200px;
+}
+.cart tr td input{
+width: 40px;
+text-align: center;
+height: 25px;
+}
+.cart tr th input{
+width: 25px;
+height: 25px;
+margin: 10px 10px;
+}
+.cart tr td button{
+width: 25px;
+height: 25px;
+color: #555555;
+    font-size: 12px;
+}
+.cart th:nth-of-type(1) {
+    line-height: 40px;
+}
+.cart{
+    margin-bottom: 50px;
+}
+.cart tr td img{
+width: 60px;
+height: 60px;
+border: 1px solid #999999;
+}
+.cart .goods-name{
+    display: flex;
+   align-items: center;
+}
+.cart .goods-name div:nth-of-type(2){
+    padding: 0 10px;
+}
+.cart .goods-remove{
+    width: 60px;
+}
+.cart{
+    background: white;
+}
+.cart a, .cart span,.cart input{
+    color: #555555;
+    font-size: 12px;
+    overflow: hidden;
+}
+.cart-empty{
+    text-align: center;
+    height: 150px;
+    line-height: 50px;
+    margin-top: 50px;
+}
+.cart-empty h2{
+   font-size: 20px;
+   font-weight: normal;
+}
+.cart-empty a{
+    color: blue;
+    cursor: pointer;
+    margin-left:20px ;
+}
+.allprice{
+  width: 100%;
+  height: 100px;  
+    color: red;
+    text-align: right;
+    padding: 30px 100px;
+}
+.allprice a,.allprice span{
+  height: 30px;
+    line-height: 30px;
+    font-size: 16px;
+}
+.allprice button{
+    width: 80px;
+    height: 30px;
+}

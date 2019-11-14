@@ -1,0 +1,111 @@
+.main{
+    background: #f6f6f6;
+}
+.login{
+    height: 100%;
+    min-width: 420px;
+}
+.login-top {
+    width: 100%;
+    height: 80px;
+    background: #f6f6f6;
+
+}
+.login-top h1 {
+    font-size: 20px;
+    font-family: microsoft yahei, SimHei;
+    font-weight: normal;
+    color: #000;
+    padding: 50px 0 10px 0;
+    margin: 0;
+}
+.box{
+    display: flex;
+}
+.login-right{
+    background: white;
+    width: 450px;
+    height: 420px;
+    /* text-align: center; */
+   padding: 50px 0;
+}
+
+.login-right input{
+    width: 300px;
+    height: 50px;
+}
+.login-right>ul{
+    padding: 0 40px;
+
+}
+.login-right li{
+    padding-bottom: 20px;
+}
+
+
+.login-right #login-btn1 {
+    width: 200px;
+    height: 50px;
+    background: #E52142;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    line-height: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+ margin-right: 10px;
+   margin-left: 40px;
+    float: left;
+    
+}
+.login-right .forgetPass{
+    float: left;
+    width: 100px;
+    height: 50px;
+    margin-left: 20px;
+   line-height:  50px;
+    font-size: 12px;
+    
+    
+}
+.login-right .forgetPass a{
+  color: blue;
+    
+}
+.login-right>div:nth-of-type(1){
+    width: 450px;
+    height: 50px;
+    
+   
+}
+.login-right p{
+    width: 100%;
+    height: 50px;
+    padding-left: 40px;
+    line-height: 50px;
+    color: #E52142;
+    font-size: 12px;
+    
+    display: none;
+   
+}
+
+.login-right>div:nth-of-type(2) h4{
+ padding-left: 40px;
+ height: 50px;
+ line-height: 50px;
+ 
+    
+}
+.login-right>div:nth-of-type(2) ul{
+    display: flex;
+    padding-left: 40px;
+    
+    
+}
+.login-right>div:nth-of-type(2) ul li{
+    padding-right: 10px;
+    
+    
+}
