@@ -1,22 +1,25 @@
 class List {
-    constructor(options) {
-        this.cont = options.cont;
-        this.url = options.url;
+    constructor() {
+      this.url="http://localhost/kjt/goods.json";
+      this.cont=document.querySelector(".cont")
         console.log(this.cont)
         this.load();
 
     }
 
     load() {
-        var that = this;
-        ajaxGet(this.url, function (res) {
-            that.res = JSON.parse(res);
-            that.display();
-        })
+       $.ajax({url:this.url,success:(res)=>{
+    
+           this.res=res;
+           console.log(this.res)
+             this.display()  
+       }})
     }
 
     display() {
         var str = "";
+        console.log(this.res.length
+        )
         for (var i = 0; i < this.res.length; i++) {
             str += `<li>
                 <a href=""><img src="${this.res[i].img}" alt=""></a>
@@ -33,10 +36,10 @@ class List {
                 </div>
             </li>`;
         }
+        console.log(this.res)
         this.cont.innerHTML= str;
     }
 }
-new List({
-    url: "http://localhost/kjt/goods.json",
-    cont: $(".cont")
-})
+//不传参,可能造成元素丢失
+new List();
+

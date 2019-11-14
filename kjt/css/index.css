@@ -354,6 +354,38 @@ h4 {
     position: absolute;
 }
 
+.box1 .list>dl>dd>ul{
+    width: 800px;
+    height: 480px;
+    background: white;
+    position: absolute;
+    left: 216px;
+    top: 0;
+    display: none;
+
+}
+
+
+.box1 .list>dl>dd>ul a{
+    font-size: 14px;
+    margin: 20px;
+    border-right:1px solid #e5e5e5 ;
+
+}
+.box1 .list>dl>dd>ul li{
+    
+    padding: 20px;
+
+
+}
+
+
+.box1 .list>dl:hover dd:last-child ul {
+    display: block;
+   
+
+}
+
 .banner .list {
     position: absolute;
     background: grey;
@@ -453,6 +485,8 @@ h4 {
 
 .main .main-country .items {
     display: flex;
+   
+    
 }
 
 .main .main-country .items .item {
@@ -463,8 +497,35 @@ h4 {
     line-height: 40px;
     text-align: center;
     margin-top: 14px;
+    
+}
+.main .container .goods .goodsTitle{
+display: none;
+
+}
+.main .container .goods .goodsTitle li{
+float: left;
+
 }
 
+
+.main .container .goods .abc{
+display: block;
+display: flex;
+}
+.main .container .main-country .items .active{
+   
+    background: white;
+}
+
+.main .container .main-country .items .active a{
+   color: red;
+
+}
+/* .main .container .goods .goodsTitle{
+   
+    display: flex;
+} */
 .main .main-country .items .item a {
     font-size: 16px;
     color: white;
