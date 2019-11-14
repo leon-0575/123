@@ -24,7 +24,7 @@ function removeCookie(key, options) {
 
 
 var s = getCookie("name");
-console.log(s);
+// console.log(s);
 
 function getCookie(key) {
     // 获取所有cookie
