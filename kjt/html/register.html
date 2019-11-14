@@ -86,10 +86,10 @@
                 <div class="reg-left">
                     <form action="">
                     <ul>
-                        <li class="inputli"><label for=""> 手 机 号 : </label> <input type="text"  placeholder="请输入手机号"  digits=true  minlength="11" required=true> <span>✖请填写正确的手机号码</span>
+                        <li class="inputli"><label for=""> 手 机 号 : </label> <input type="text" id="username"  placeholder="请输入手机号"  digits=true  minlength="11" required=true> <span>✖请填写正确的手机号码</span>
                         </li>
                         
-                        <!-- <li class="inputli"><label for="">用 户 名 : </label><input type="text" value="" placeholder="请输入验证码"><span>✖用户名已存在</span></li> -->
+                      
                         <li class="inputli">
                             <label for="">设置密码:</label>
                             <input type="password" value="" placeholder="6-20个大小写英文字母、符号或者数字" minlength="6" id="pass" required=true>
@@ -100,11 +100,11 @@
                             <input type="password" minlength="6"  value="" placeholder="请再次输入密码" id="pass2" equalTo="#pass" required=true>
                             <span>✖两次输入密码不一致</span>
                         </li>
-                        <li class="inputli"><input type="checkbox" checked="checked" id="check1">我已阅读并同意《<a href="##">服务协议</a>》</li>
+                        <li class="inputli"><input type="checkbox" checked="checked" id="check1">我已阅读并同意《<a href="#">服务协议</a>》</li>
                         
 
                     </ul>
-                    <input  type="submit"id="reg-btn1" value="注册"></input>
+                    <input  type="button"id="reg-btn1" value="注册"></input><div class="regs"  style="height:50px;width: 350px;line-height:50px;text-align: center; margin-top:30px;color:red;display:none">注册成功,正在跳转登录页面...</div>
                     </form>
                 </div>
                 <div class="reg-right">
@@ -138,5 +138,6 @@
 <script src="../libs/jquery.validate.js"></script>
 <script src="../libs/jquery.validate.messages_zh.js">
 </script>
+<script src="../libs/cookie.js"></script>
 <script src="../js/register.js"></script>
 </html>
