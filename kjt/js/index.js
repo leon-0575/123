@@ -15,7 +15,7 @@ $(".rs p").click(function(){
 
 })
 
-//轮播图
+//2.轮播图
 
 //  function Carousel(imgList, train, leftBtn, rightBtn, cirList, interval=1000) {
 //             // 定义信号量属性
@@ -219,26 +219,7 @@ $(".rs p").click(function(){
 // }
 
 
-//选项卡
-// var items=document.querySelector(".items .item")
-// console.log(items)
-// var goods=document.querySelector(".goods .goodsTitle")
-// console.log(goods)
-// for(var i=0; i<items.length;i++){
-//     items[i].index=i;
-//    items[i].onclick=function(){
-
-//    for(var j=0;j<goods.length;j++){
-//        items[j].className="";
-//         goodsTitle[j].style.display="none"
-//        goodsTitle[this.index].style.display="block"
-
-//     }
-//     this.className="active"
-//    }
- 
-// }
-
+//3.选项卡
 
 $(function () {
     $('.items').children('.item').click(function () {
@@ -247,3 +228,25 @@ $(function () {
         $('.goods').children('.goodsTitle').css('display', 'none').eq($(this).index()).css('display', 'block');
     });
 });
+
+
+//4.用户登录状态
+
+
+;(function fn(){
+ if(getCookie("logininfo")){
+     $("#login-ready").css("display","none");
+     $("#login-ok").css("display","block");
+
+    var loginname= JSON.parse(getCookie("logininfo"))[0].user;
+ 
+    console.log(loginname);
+    var ln=document.querySelector("#login-name")
+    ln.innerHTML=loginname;
+
+ }
+
+ $("#outlogin").click(function(){
+     removeCookie("logininfo");
+     location.href="index.html"
+ })})();

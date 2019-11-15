@@ -93,3 +93,25 @@
         }
 
         new Magnifier();
+
+
+        //4.用户登录状态
+
+
+;(function fn(){
+ if(getCookie("logininfo")){
+     $("#login-ready").css("display","none");
+     $("#login-ok").css("display","block");
+
+    var loginname= JSON.parse(getCookie("logininfo"))[0].user;
+ 
+    console.log(loginname);
+    var ln=document.querySelector("#login-name")
+    ln.innerHTML=loginname;
+
+ }
+
+ $("#outlogin").click(function(){
+     removeCookie("logininfo");
+     location.href="index.html"
+ })})();

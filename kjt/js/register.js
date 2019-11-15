@@ -23,8 +23,8 @@
          if (pass.value == pass2.value) {
              if (check1.checked) {
                  regarr.push({
-                     "user": user.value,
-                     " pass": pass2.value
+                     user: user.value,
+                      pass: pass2.value
                  })
                  setCookie("usermsg", JSON.stringify(regarr))
                     alert("注册成功,欢迎老铁")

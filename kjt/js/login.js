@@ -2,7 +2,8 @@ let luser = document.querySelector("#luser")
 let lpass = document.querySelector("#lpass")
 let login = document.querySelector("#login-btn1")
 let usermsg = JSON.parse(getCookie("usermsg"))
-// console.log(usermsg[0]["pass"])
+console.log(usermsg[0].user)
+console.log(usermsg[0].pass)
 
 
 
@@ -24,14 +25,13 @@ login.addEventListener("click", function () {
                         if (luser.value == usermsg[i].user) {
                             
 
-                            if (lpass.value 
-                            // == usermsg[i].pass
+                            if (lpass.value  == usermsg[i].pass
                             ) {
                                 loginmsg.push({
-                                    "user":luser.value,
-                                   " pass":lpass.value
+                                    user:luser.value,
+                                   pass:lpass.value
                                 })
-                               console.log( setCookie("logininfo",JSON.stringify(loginmsg)))
+                              setCookie("logininfo",JSON.stringify(loginmsg))
                                 alert("登录成功,买买买");
                                 location.href = "index.html"
 

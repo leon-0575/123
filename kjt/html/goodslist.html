@@ -16,12 +16,12 @@
 
 
 <body>
-    <div class="head">
+   <div class="head ">
         <div class="container">
             <div class="head1">
-                <ul class="head-l">
+                <ul class="head-l" style="padding-right: 100px;">
                     <li><a href=""><i class="fa fa-star"></i>收藏跨境通</a></li>
-                    <li><a href=""><i class="fa fa-home"></i>跨境通首页</a></li>
+                    <li><a href="index.html"><i class="fa fa-home"></i>跨境通首页</a></li>
                     <li><i class="fa fa-volume-up" aria-hidden="true"></i></i></li>
                     <li class="ma">
                         <marquee Scrollamount="2" direction="left">客服服务时间调整</marquee>
@@ -29,8 +29,13 @@
                     <li><a href="">More...</a></li>
                 </ul>
                 <ul class="head-r">
-                    <li><a href="" class="login">请登录</a>-
-                        <a href="" class="register">免费注册</a>
+                    <li id="login-ready"><a href="login.html" class="login">请登录</a>-
+                        <a href="register.html" class="register">免费注册</a>
+                    </li>
+                    <li id="login-ok"style="display: none;color:red">
+                       欢迎, <a href="" id="login-name"></a><a href="javascript:;"
+                                id="outlogin">[退出]</a>
+                     
                     </li>
                     <li><a href="">我的订单</a></li>
                     <li>
@@ -109,9 +114,10 @@
                     </div>
                 </div>
                 <div class="cart">
+                    <a href="cart.html">
                     <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                     <span>我的购物车</span>
-                    <div id="cart-number">0</div>
+                    <div id="cart-number">0</div></a>
                 </div>
             </div>
         </div>

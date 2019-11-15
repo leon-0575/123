@@ -54,7 +54,13 @@ a {
 }
 
 .head-l {
-    padding-right: 150px;
+    padding-right: 100px;
+}
+.head-r li:nth-child(1){
+    background: red;
+    width: 150px;
+    text-align: center;
+
 }
 
 .head-r li a {
@@ -272,6 +278,8 @@ h4 {
     color: red;
 }
 
+
+
 .nav {
     height: 35px;
     width: 100%;
@@ -354,7 +362,7 @@ h4 {
     position: absolute;
 }
 
-.box1 .list>dl>dd>ul{
+.box1 >dl>dd>ul{
     width: 800px;
     height: 480px;
     background: white;

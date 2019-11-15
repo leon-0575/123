@@ -17,7 +17,7 @@
     <div class="head ">
         <div class="container">
             <div class="head1">
-                <ul class="head-l">
+                <ul class="head-l" style="padding-right: 100px;">
                     <li><a href=""><i class="fa fa-star"></i>收藏跨境通</a></li>
                     <li><a href=""><i class="fa fa-home"></i>跨境通首页</a></li>
                     <li><i class="fa fa-volume-up" aria-hidden="true"></i></i></li>
@@ -27,8 +27,13 @@
                     <li><a href="">More...</a></li>
                 </ul>
                 <ul class="head-r">
-                    <li><a href="login.html" class="login">请登录</a>-
+                    <li id="login-ready"><a href="login.html" class="login">请登录</a>-
                         <a href="register.html" class="register">免费注册</a>
+                    </li>
+                    <li id="login-ok"style="display: none;color:red">
+                       欢迎, <a href="" id="login-name"></a><a href="javascript:;"
+                                id="outlogin">[退出]</a>
+                     
                     </li>
                     <li><a href="">我的订单</a></li>
                     <li>
@@ -107,8 +112,8 @@
                     </div>
                 </div>
                 <div class="cart">
-                    <a href="../html/cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                        <span>我的购物车</span></a>
+                    <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                        <span></span>我的购物车</span></a>
 
                     <div id="cart-number">0</div>
                 </div>
@@ -119,7 +124,7 @@
         <div class="container">
             <ul>
                 <li><i class="fa fa-list"></i>商品市场</li>
-                <li><a href="">精品母婴</a></li>
+                <li><a href="goodslist.html">精品母婴</a></li>
                 <li><a href="">个人护理</a></li>
                 <li><a href="">居家生活</a></li>
                 <li><a href="">营养保健</a></li>
@@ -159,16 +164,16 @@
                                         href="">其他</a></li>
                                 <li><a href="">营养辅食</a><a href="">米粉米糊</a><a href="">果蔬营养泥</a><a href="">面条</a><a
                                         href="">其他辅食</a></li>
-                                         <li><a href="">宝宝喂养</a><a href="">奶瓶</a><a href="">奶嘴</a><a href="">吸奶器</a><a
+                                <li><a href="">宝宝喂养</a><a href="">奶瓶</a><a href="">奶嘴</a><a href="">吸奶器</a><a
                                         href="">哺喂餐具</a></li>
-                                         <li><a href="">奶粉</a><a href="">1段</a><a href="">2段</a><a href="">3段</a><a
+                                <li><a href="">奶粉</a><a href="">1段</a><a href="">2段</a><a href="">3段</a><a
                                         href="">其他</a></li>
 
                                 <li><a href="">尿裤</a><a href="">尿裤湿巾</a><a href="">成人尿裤</a><a href="">婴儿湿巾</a><a
                                         href="">其他</a></li>
                                 <li><a href="">营养辅食</a><a href="">米粉米糊</a><a href="">果蔬营养泥</a><a href="">面条</a><a
                                         href="">其他辅食</a></li>
-                                         <li><a href="">宝宝喂养</a><a href="">奶瓶</a><a href="">奶嘴</a><a href="">吸奶器</a><a
+                                <li><a href="">宝宝喂养</a><a href="">奶瓶</a><a href="">奶嘴</a><a href="">吸奶器</a><a
                                         href="">哺喂餐具</a></li>
 
                             </ul>
@@ -181,17 +186,17 @@
                         <dd>身体护理</dd>
                         <dd>
                             <ul>
-                               <li><a href="">洗发洗护</a><a href="">洗发</a><a href="">护发</a><a href="">染发</a><a
+                                <li><a href="">洗发洗护</a><a href="">洗发</a><a href="">护发</a><a href="">染发</a><a
                                         href="">定型</a><a href="">洗护套装</a></li>
-                                        <li><a href="">洗发洗护</a><a href="">洗发</a><a href="">护发</a><a href="">染发</a><a
+                                <li><a href="">洗发洗护</a><a href="">洗发</a><a href="">护发</a><a href="">染发</a><a
                                         href="">定型</a><a href="">洗护套装</a></li>
-                                        <li><a href="">洗发洗护</a><a href="">洗发</a><a href="">护发</a><a href="">染发</a><a
+                                <li><a href="">洗发洗护</a><a href="">洗发</a><a href="">护发</a><a href="">染发</a><a
                                         href="">定型</a><a href="">洗护套装</a></li>
-                                        <li><a href="">洗发洗护</a><a href="">洗发</a><a href="">护发</a><a href="">染发</a><a
+                                <li><a href="">洗发洗护</a><a href="">洗发</a><a href="">护发</a><a href="">染发</a><a
                                         href="">定型</a><a href="">洗护套装</a></li>
-                                        <li><a href="">洗发洗护</a><a href="">洗发</a><a href="">护发</a><a href="">染发</a><a
+                                <li><a href="">洗发洗护</a><a href="">洗发</a><a href="">护发</a><a href="">染发</a><a
                                         href="">定型</a><a href="">洗护套装</a></li>
-                                        
+
                             </ul>
                         </dd>
                     </dl>
@@ -202,9 +207,9 @@
                         <dd>纤体修身</dd>
                         <dd>
                             <ul>
-                               <li><a href="">营养辅食</a><a href="">米粉米糊</a><a href="">果蔬营养泥</a><a href="">面条</a><a
+                                <li><a href="">营养辅食</a><a href="">米粉米糊</a><a href="">果蔬营养泥</a><a href="">面条</a><a
                                         href="">其他辅食</a></li>
-                                         <li><a href="">宝宝喂养</a><a href="">奶瓶</a><a href="">奶嘴</a><a href="">吸奶器</a><a
+                                <li><a href="">宝宝喂养</a><a href="">奶瓶</a><a href="">奶嘴</a><a href="">吸奶器</a><a
                                         href="">哺喂餐具</a></li>
                             </ul>
                         </dd>
@@ -232,10 +237,10 @@
                         <dd>
                             <ul>
                                 <li><a href="">生活日用</a>
-                                <a href="">生活日用</a>   <a href="">生活日用</a>
-                                <a href="">生活日用</a>
-                                <a href="">生活日用</a></li>
-                             
+                                    <a href="">生活日用</a> <a href="">生活日用</a>
+                                    <a href="">生活日用</a>
+                                    <a href="">生活日用</a></li>
+
                             </ul>
                         </dd>
                     </dl>
@@ -247,10 +252,10 @@
                         <dd>
                             <ul>
                                 <li><a href="">宠物用品</a>
-                                <a href="">宠物用品</a><a href="">宠物用品</a>
-                                <a href="">宠物用品</a>
-                                <a href="">宠物用品</a></li>
-                                
+                                    <a href="">宠物用品</a><a href="">宠物用品</a>
+                                    <a href="">宠物用品</a>
+                                    <a href="">宠物用品</a></li>
+
                             </ul>
                         </dd>
                     </dl>
@@ -262,9 +267,9 @@
                         <dd>
                             <ul>
                                 <li><a href="">精品女包</a>
-                                <a href="">精品女包</a><a href="">精品女包</a><a href="">精品女包</a><a href="">精品女包</a></li>
-                                
-                               
+                                    <a href="">精品女包</a><a href="">精品女包</a><a href="">精品女包</a><a href="">精品女包</a></li>
+
+
 
                             </ul>
                         </dd>
@@ -276,7 +281,8 @@
                         <dd>男装潮流</dd>
                         <dd>
                             <ul>
-                                <li><a href="">服装配饰</a><a href="">服装配饰</a><a href="">服装配饰</a><a href="">服装配饰</a><a href="">服装配饰</a><a href="">服装配饰</a></li>
+                                <li><a href="">服装配饰</a><a href="">服装配饰</a><a href="">服装配饰</a><a href="">服装配饰</a><a
+                                        href="">服装配饰</a><a href="">服装配饰</a></li>
                             </ul>
                         </dd>
                     </dl>
@@ -351,9 +357,11 @@
                             </li>
                         </ul>
 
-                          <ul class="goodsTitle">
+                        <ul class="goodsTitle">
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/00/17/CgoJ5VqnNiCAf70AAABi70RC814022_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/00/17/CgoJ5VqnNiCAf70AAABi70RC814022_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">UNNY/悠宜 悠宜卸妆水 500ml/瓶</a></div>
                                 <div>
                                     <span class="price-now">￥50.00</span>
@@ -361,7 +369,9 @@
                                 </div>
                             </li>
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/00/12/CgoJ5VqmEuuAOpRaAAFcCZqfXwA996_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/00/12/CgoJ5VqmEuuAOpRaAAFcCZqfXwA996_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">AHC保湿补水B5玻尿酸洗面奶 180ml/瓶</a></div>
                                 <div>
                                     <span class="price-now">￥69.00</span>
@@ -369,7 +379,9 @@
                                 </div>
                             </li>
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/00/28/CgoJzVqmK3yAT6chAABi6cRAlqc845_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/00/28/CgoJzVqmK3yAT6chAABi6cRAlqc845_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">日本ROHTO乐敦CC 化妆水 170ml</a></div>
                                 <div>
                                     <span class="price-now">￥75.00</span>
@@ -377,7 +389,9 @@
                                 </div>
                             </li>
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/00/24/CgoJzVql3FKAeIWTAAB3kjey6qk874_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/00/24/CgoJzVql3FKAeIWTAAB3kjey6qk874_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">Sulwhasoo/雪花秀 玉璨净柔面膜 150ml 玉容撕拉面膜</a></div>
                                 <div>
                                     <span class="price-now">￥189.00</span>
@@ -385,7 +399,9 @@
                                 </div>
                             </li>
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/02/E1/CgoJ5V0IcjaAYlTzAAH7wEERedw401_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/02/E1/CgoJ5V0IcjaAYlTzAAH7wEERedw401_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">Deep-formula Restructuring深层滋润亮肤霜 130ml/瓶</a></div>
                                 <div>
                                     <span class="price-now">￥250.00</span>
@@ -393,7 +409,7 @@
                                 </div>
                             </li>
                         </ul>
-                         <ul class="goodsTitle ">
+                        <ul class="goodsTitle ">
                             <li>
                                 <div><a href=""><img src="../img/jpan_1.jpg" alt=""></a></div>
                                 <div class="txt"><a href="">花王乐而雅S系列卫生巾 夜用护翼棉柔透气40cm无荧光剂超薄型11片装(夜用)</a></div>
@@ -436,9 +452,11 @@
                             </li>
                         </ul>
 
-                          <ul class="goodsTitle ">
+                        <ul class="goodsTitle ">
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/00/17/CgoJ5VqnNiCAf70AAABi70RC814022_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/00/17/CgoJ5VqnNiCAf70AAABi70RC814022_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">UNNY/悠宜 悠宜卸妆水 500ml/瓶</a></div>
                                 <div>
                                     <span class="price-now">￥50.00</span>
@@ -446,7 +464,9 @@
                                 </div>
                             </li>
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/00/12/CgoJ5VqmEuuAOpRaAAFcCZqfXwA996_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/00/12/CgoJ5VqmEuuAOpRaAAFcCZqfXwA996_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">AHC保湿补水B5玻尿酸洗面奶 180ml/瓶</a></div>
                                 <div>
                                     <span class="price-now">￥69.00</span>
@@ -454,7 +474,9 @@
                                 </div>
                             </li>
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/00/28/CgoJzVqmK3yAT6chAABi6cRAlqc845_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/00/28/CgoJzVqmK3yAT6chAABi6cRAlqc845_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">日本ROHTO乐敦CC 化妆水 170ml</a></div>
                                 <div>
                                     <span class="price-now">￥75.00</span>
@@ -462,7 +484,9 @@
                                 </div>
                             </li>
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/00/24/CgoJzVql3FKAeIWTAAB3kjey6qk874_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/00/24/CgoJzVql3FKAeIWTAAB3kjey6qk874_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">Sulwhasoo/雪花秀 玉璨净柔面膜 150ml 玉容撕拉面膜</a></div>
                                 <div>
                                     <span class="price-now">￥189.00</span>
@@ -470,7 +494,9 @@
                                 </div>
                             </li>
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/02/E1/CgoJ5V0IcjaAYlTzAAH7wEERedw401_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/02/E1/CgoJ5V0IcjaAYlTzAAH7wEERedw401_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">Deep-formula Restructuring深层滋润亮肤霜 130ml/瓶</a></div>
                                 <div>
                                     <span class="price-now">￥250.00</span>
@@ -478,9 +504,11 @@
                                 </div>
                             </li>
                         </ul>
-                         <ul class="goodsTitle ">
+                        <ul class="goodsTitle ">
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/00/17/CgoJ5VqnNiCAf70AAABi70RC814022_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/00/17/CgoJ5VqnNiCAf70AAABi70RC814022_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">UNNY/悠宜 悠宜卸妆水 500ml/瓶</a></div>
                                 <div>
                                     <span class="price-now">￥50.00</span>
@@ -488,7 +516,9 @@
                                 </div>
                             </li>
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/00/12/CgoJ5VqmEuuAOpRaAAFcCZqfXwA996_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/00/12/CgoJ5VqmEuuAOpRaAAFcCZqfXwA996_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">AHC保湿补水B5玻尿酸洗面奶 180ml/瓶</a></div>
                                 <div>
                                     <span class="price-now">￥69.00</span>
@@ -496,7 +526,9 @@
                                 </div>
                             </li>
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/00/28/CgoJzVqmK3yAT6chAABi6cRAlqc845_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/00/28/CgoJzVqmK3yAT6chAABi6cRAlqc845_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">日本ROHTO乐敦CC 化妆水 170ml</a></div>
                                 <div>
                                     <span class="price-now">￥75.00</span>
@@ -504,7 +536,9 @@
                                 </div>
                             </li>
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/00/24/CgoJzVql3FKAeIWTAAB3kjey6qk874_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/00/24/CgoJzVql3FKAeIWTAAB3kjey6qk874_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">Sulwhasoo/雪花秀 玉璨净柔面膜 150ml 玉容撕拉面膜</a></div>
                                 <div>
                                     <span class="price-now">￥189.00</span>
@@ -512,7 +546,9 @@
                                 </div>
                             </li>
                             <li>
-                                <div><a href=""><img src="http://image.kjt.com/g1/M00/02/E1/CgoJ5V0IcjaAYlTzAAH7wEERedw401_P240.jpg" alt=""></a></div>
+                                <div><a href=""><img
+                                            src="http://image.kjt.com/g1/M00/02/E1/CgoJ5V0IcjaAYlTzAAH7wEERedw401_P240.jpg"
+                                            alt=""></a></div>
                                 <div class="txt"><a href="">Deep-formula Restructuring深层滋润亮肤霜 130ml/瓶</a></div>
                                 <div>
                                     <span class="price-now">￥250.00</span>
@@ -520,7 +556,7 @@
                                 </div>
                             </li>
                         </ul>
-                    
+
                     </div>
                 </div>
                 <div class="main-mzgh  floor">
@@ -717,5 +753,8 @@
 
 </body>
 <script src="../libs/jquery-2.2.4.js"></script>
+
+<script src="../libs/cookie.js"></script>
 <script src="../js/index.js"></script>
+
 </html>

@@ -109,3 +109,149 @@
     
     
 }
+
+
+.head {
+    height: 30px;
+    background: #F5F5F5;
+}
+
+.head .head1 {
+    display: flex;
+}
+
+.head-l li:nth-of-type(5) a {
+    background-color: lightgray;
+    border-radius: 5px;
+    color: white;
+    padding: 0 5px;
+}
+
+.head .head1 ul {
+    display: flex;
+    line-height: 30px;
+}
+
+.head .head1 ul li {
+    line-height: 30px;
+    color: #999;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.head .head1 .head-l li {
+    padding-right: 10px;
+}
+
+.head-l {
+    padding-right: 100px;
+}
+.head-r li:nth-child(1){
+    background: red;
+    width: 200px;
+    text-align: c;
+
+}
+
+.head-r li a {
+    border-right: 1px solid #dcdcdc;
+    padding: 0 10px;
+}
+
+.head-r li .login {
+    border: none;
+}
+
+.head-l li>a:hover,
+.head-r li>a:hover {
+    color: #ff5252;
+}
+
+.ma {
+    height: 30px;
+}
+
+marquee {
+    width: 300px;
+    line-height: 30px;
+}
+
+.head-r {
+    padding-left: 40px;
+    position: relative;
+}
+
+
+
+.head-r dd {
+    display: none;
+}
+
+.head-r dl {
+    position: absolute;
+    z-index: 999;
+
+}
+
+.head-r dd a {
+    border: none;
+}
+
+.head-r li dl:hover dd {
+    display: block;
+    background: white;
+
+
+}
+
+.head-r li dl:hover dt {
+
+    background: white;
+    color: #ff5252;
+
+}
+
+.head-r li dl:hover dt a {
+
+
+    color: #ff5252;
+
+}
+
+
+.head-r dl:hover dd:hover {
+    background: #e5e5e5;
+
+}
+
+.head-r dl {
+    position: relative;
+
+}
+
+.head-r li .sj {
+    border: none;
+}
+
+
+
+.cart {
+    position: relative;
+}
+
+
+#cart-number {
+    border-radius: 10px;
+    min-width: 20px;
+    min-height: 20px;
+    position: absolute;
+    top: -10px;
+    right: 0px;
+    background: #FF5252;
+    z-index: 2;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 20px;
+
+}
