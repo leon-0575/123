@@ -154,7 +154,7 @@
 .box .sbox {
   width: 400px;
   height: 400px;
-
+  position: relative;
 }
 
 .box .sbox img {
@@ -180,9 +180,14 @@
   width: 400px;
   height: 400px;
   overflow: hidden;
-  position: relative;
+  position: absolute;
+  background: red;
+  left: 530px;
+  top: 275px;
+
+
   border: 1px solid black;
-  display: none;
+  /* display: none; */
   z-index: 999;
 }
 
@@ -192,6 +197,7 @@
   position: absolute;
   left: 0;
   top: 0;
+  display: block;
 }
 
 .shadow {

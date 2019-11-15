@@ -1,47 +1,47 @@
 [{
     "img":"http://image.kjt.com/neg/P240/28953bd1-2244-491b-928f-6370f26143bd.jpg",
     "name":"花王乐而雅S系列卫生巾 夜用护翼棉柔透气40cm无荧光剂超薄型11片装(夜用)",
-    "oldprice":"￥35.00",
-    "newprice":"￥58.00",
+    "oldprice":"35.00",
+    "newprice":"58.00",
 
     "goodsId":"1"
 },{
     "img":"http://image.kjt.com/g1/M00/03/4A/CgoJzV1H4FCAV3nAAABiD7XWQdg365_P240.jpg",
     "name":"花王Prettia泡沫染发剂 黑发专用 白金浅驼色",
-    "oldprice":"￥55.00",
-    "newprice":"￥78.00",
+    "oldprice":"55.00",
+    "newprice":"78.00",
 
     "goodsId":"2"
 },
 {
     "img":"http://image.kjt.com/g1/M00/01/F5/CgoJ5VvryjaAAMrCAAE7F_sWWw8779_P240.jpg",
     "name":"日本ROHTO乐敦CC 化妆水 170ml",
-    "oldprice":"￥69.00",
-    "newprice":"￥128.00",
+    "oldprice":"69.00",
+    "newprice":"128.00",
 
     "goodsId":"3"
 },
 {
     "img":"http://image.kjt.com/neg/P240/99ac0da6-d156-4fdd-a2dd-d2eb25e0a7d6.jpg",
     "name":"嘉娜宝Kanebo SUISAI 酵素洁面粉 0.4g/个 32个装",
-    "oldprice":"￥95.00",
-    "newprice":"￥158.00",
+    "oldprice":"95.00",
+    "newprice":"158.00",
 
     "goodsId":"4"
 },
 {
     "img":"http://image.kjt.com/g1/M00/01/43/CgoJzVta4WCAcMMaAABEpo7RWp4852_P240.jpg",
     "name":"Spa Treatment眼膜红色新版 60片(无香味_无色)",
-    "oldprice":"￥249.00",
-    "newprice":" ￥520.00",
+    "oldprice":"249.00",
+    "newprice":" 520.00",
 
     "goodsId":"5"
 },
 {
     "img":"http://image.kjt.com/g1/M00/00/17/CgoJ5VqnNiCAf70AAABi70RC814022_P240.jpg",
     "name":"UNNY/悠宜 悠宜卸妆水 500ml/瓶",
-    "oldprice":"￥50.00",
-    "newprice":"￥69.00",
+    "oldprice":"50.00",
+    "newprice":"69.00",
 
     "goodsId":"6"
 }
@@ -49,8 +49,8 @@
 {
     "img":"http://image.kjt.com/g1/M00/00/12/CgoJ5VqmEuuAOpRaAAFcCZqfXwA996_P240.jpg",
     "name":"AHC保湿补水B5玻尿酸洗面奶 180ml/瓶",
-    "oldprice":"￥69.00",
-    "newprice":"￥198.00",
+    "oldprice":"69.00",
+    "newprice":"198.00",
 
     "goodsId":"7"
 }
@@ -58,8 +58,8 @@
 {
     "img":"http://image.kjt.com/g1/M00/00/28/CgoJzVqmK3yAT6chAABi6cRAlqc845_P240.jpg",
     "name":"Innisfree悦诗风吟绿茶精萃平衡柔肤露 160ml/瓶",
-    "oldprice":"￥75.00",
-    "newprice":"￥115.00",
+    "oldprice":"75.00",
+    "newprice":"115.00",
 
     "goodsId":"8"
 }
@@ -67,8 +67,8 @@
 {
     "img":"http://image.kjt.com/g1/M00/00/24/CgoJzVql3FKAeIWTAAB3kjey6qk874_P240.jpg",
     "name":"Sulwhasoo/雪花秀 玉璨净柔面膜 150ml 玉容撕拉面膜",
-    "oldprice":"￥189.00",
-    "newprice":"￥280.00",
+    "oldprice":"189.00",
+    "newprice":"280.00",
 
     "goodsId":"9"
 }
@@ -76,8 +76,8 @@
 {
     "img":"http://image.kjt.com/g1/M00/02/E1/CgoJ5V0IcjaAYlTzAAH7wEERedw401_P240.jpg",
     "name":"Deep-formula Restructuring深层滋润亮肤霜 130ml/瓶",
-    "oldprice":"￥250.00",
-    "newprice":" ￥350.00",
+    "oldprice":"250.00",
+    "newprice":" 350.00",
     "goodsId":"10"
 }
 

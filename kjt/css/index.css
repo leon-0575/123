@@ -362,7 +362,7 @@ h4 {
     position: absolute;
 }
 
-.box1 >dl>dd>ul{
+.box1 .list>dl>dd>ul{
     width: 800px;
     height: 480px;
     background: white;
@@ -374,12 +374,12 @@ h4 {
 }
 
 
-.box1 .list>dl>dd>ul a{
+ .box1 .list>dl>dd>ul a{
     font-size: 14px;
     margin: 20px;
     border-right:1px solid #e5e5e5 ;
 
-}
+} 
 .box1 .list>dl>dd>ul li{
     
     padding: 20px;
@@ -410,7 +410,7 @@ h4 {
     color: white;
     opacity: 0.9;
     border-bottom: 1px solid #9c9292;
-}
+} 
 
 .banner dl dt {
     padding: 10px 0;
