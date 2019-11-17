@@ -14,8 +14,8 @@ $(".rs p").click(function(){
 
 
 })
-
-//2.轮播图
+console.log()
+//2.
 
  function Carousel(imgList, train, leftBtn, rightBtn, cirList, interval=1000) {
             // 定义信号量属性
